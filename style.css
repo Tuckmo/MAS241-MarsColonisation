@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+.card {
+    width: 300px;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 0px 0px;
+    margin-left: 40px;
+    float: left;
+    color: aliceblue;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cardContent {
+    box-sizing: border-box;
+    padding-left: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 24px;
+    background-color: #242424;
+}
+
+#testContent {
+    margin: 0;
+    display: inline;
+    background-color: darkgray;
+}
+
+.hiddenPage {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 50px 190px;
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.exitBTN {
+    background-color: transparent;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    border: none;
+    cursor: pointer;
+}
+
+.exitBTN:hover {
+    color: red;
+}
+
+#hiddenPageContainer {
+
+}
+
+p{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+ul, li{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+#MainBannerText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    
+}
+
+#topBanner {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header {
+    margin-left: 200px;
+    padding: 10;
+    flex-direction: column;
+}
+
+.cardHeader {
+    font-family: 'Cabin', sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+
+}
+.cardHeader a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.cardHeader a:hover {
+    color: chocolate;
+    cursor: pointer;
+    border-bottom: 2px solid chocolate;
+}
+
+#mainBannerSubText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.cardSubheading {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+#staticContent {
+/*    height: auto;*/
+	padding-left:200px;
+    background-color: black;
+    margin-bottom: 0px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.staticContentHeaders {
+    margin-left: 200px;
+    padding-top: 10px;
+    color: black;
+    
+}
+
+.buttonContainer {
+    width: 100%;
+    justify-content: center;
+}
+
+.contentHeader {
+    width: auto;
+    margin-left: 40px;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.halfGrid {
+    width: 700px;
+    padding-left: 20px;
+    float: left;
+    display: block;
+    min-width: 10%;
+    height: auto;
+}
+
+
+
+.frontImages {
+    display: inline;
+}
+
+.videoContainer {
+    padding: 5px 5px 0px 5px;
+    background-color: darkgray;
+}
+
+.Youtubevideo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+/*    width: 100%;*/
+    
+}
+.Youtubevideo iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.youtubeCaption {
+    margin-left: 20px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.embedImg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.pageSubHeadings {
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+caption {
+    display: inline-block;
+    position: relative;
+}
+
+figure {
+    display: block;
+    padding: 10px;
+    margin: auto;
+
+}
+
+figcaption {
+    display: block;
+    text-align: center;
+    margin: 10px 10em;
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+}
+
+.wrap {
+    width: auto;
+}
+
+.testme {
+    width: 150%;
+}

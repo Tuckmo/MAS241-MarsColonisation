@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Colonisation of Mars</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function () { // do not delete this line
+            $(".page").hide();
+			            
+            $('.cardContent  .card a').click(function(e){
+				e.preventDefault();
+				var textDiv = $($(this).attr('href'));		// eg $('#name');
+				var isHidden = (textDiv.css('display') == 'none');
+				textDiv.stop().slideToggle("slow");
+				if (isHidden) {
+					var posTop = textDiv.offset().top;
+					$('body, html').stop().animate({ scrollTop: posTop }, { duration:500});
+				}
+			});
+
+            $('.exitBTN').click(function () {
+                $(this).closest('.page').slideUp("slow");
+            });
+
+
+        }); // do not delete this line
+    </script>
+</head>
+
+<body>
+    <!--    BANNER STARTS HERE-->
+    <header>
+        <div id="topBanner">
+            <h1 id="MainBannerText"> Is Colonising Mars A Good Choice?</h1>
+            <h2 id="mainBannerSubText">What Problems Do We Face?</h2>
+        </div>
+
+
+    </header>
+    <!--    BANNER ENDS HERE-->
+
+
+
+
+    <!--    Center Information block starts here-->
+    <section id="staticContent">
+
+        
+<!--        Normal mars here-->
+        <a title="By USGS [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ASchiaparelli_Hemisphere_Enhanced.jpg"><img class="frontImages" width="350" height="350"  alt="Schiaparelli Hemisphere Enhanced" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Schiaparelli_Hemisphere_Enhanced.jpg/350px-Schiaparelli_Hemisphere_Enhanced.jpg"/></a>
+        
+        <!--Terraformed Mars Here-->
+        <a title="By Daein Ballard (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ATerraformedMarsGlobeRealistic.jpg"><img class="frontImages" width="350" height="350"  alt="TerraformedMarsGlobeRealistic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TerraformedMarsGlobeRealistic.jpg/350px-TerraformedMarsGlobeRealistic.jpg"/></a>
+
+
+    </section>
+    
+    <!--    Center information block ends here-->
+    
+
+    <!--    CARD CONTENT STARTS HERE-->
+    <div class="cardContent">
+<!--        <div class="halfGrid">-->
+<!--            <h1 class="contentHeader">Reasons To Go</h1>-->
+            <div class="card">
+                <h1 class="cardHeader"><a href="#whyWeNeedToGo">Why We Need To Colonise Mars</a></h1>
+                <p>As pleasant as it is to think about, the Earth and life on it isn’t going to last forever. It To ensure the survival of our species, and of those around us, we need to become a space-faring nation that can live on other planets, and them with life.</p>
+            </div>
+
+<!--        </div>-->
+<!--        Against-->
+<!--        <div class="halfGrid">-->
+<!--            <h1 class="contentHeader">Problems We Face</h1>-->
+
+            <div class="card">
+                <h1 class="cardHeader"><a href="#health">Health Issues</a></h1>
+                <p>Humans are evolutionarily built for Earth and its characteristics. Moving to another planet could lead to serious problems for our body. The problems that are mostly concerning are the changes in gravity and radiation levels we might face. </p>
+
+            </div>
+            <div class="card">
+                <h1 class="cardHeader"><a href="#livingThere">Living There</a></h1>
+                <p>As you might have guessed it, living on Mars is going to be a little different than the live we live on Earth. If we can terraform before we go, it shouldn’t too hard, but most likely we won’t be able to. That means living in close quarters, and probably in the ship that got you there in the first place. </p>
+            </div>
+            <div class="card">
+                <h1 class="cardHeader"><a href="#transportation">Transportation</a></h1>
+                <p>Getting to Mars is easy. It’s not easy when you need to transport humans instead of robots however. With humans on board, you need to account for things such as travel time, and resources that they will need along the way.  </p>
+            </div>
+
+            <div class="card">
+                <h1 class="cardHeader"><a href="#terraforming">Terraforming</a></h1>
+                <p>If we seriously want to be able to live on other planets in a similar vein to that of our current planet, without needing spacesuits to breath, then we need to be able to perform the process of terraforming to convert another planet's climate into something more Earth-like.  </p>
+            </div>
+<!--        </div>-->
+        <!--   CARD CONTENT ENDS HERE-->
+        
+
+    </div>
+
+    <!--    HIDDEN CONTENT STARTS HERE-->
+    <div class="page" id="whyWeNeedToGo">
+            <article class="hiddenPage">
+                <button class="exitBTN">&times;</button>
+                <h2 class="cardSubheading">Why We Need To Go To Mars</h2>
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/5mRM9MlZ9bk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <figcaption>NASA Director Predicts Settlement by 2060. Privately or Government.  Source: FORA.tv/Youtube</figcaption>
+                </figure>
+                
+                <p>As pleasant as it is to think about, the Earth and life on it isn’t going to last forever. To ensure the survival of our species, and of those around us, we need to become a space-faring nation that can live on other planets, spread through our solar system and eventually the galaxy.</p>
+                
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe name="Elon Musk Might Be A Super Villain" width="640" height="360" src="https://www.youtube.com/embed/WjzzGawND3s" frameborder="0" allowfullscreen></iframe>
+
+                    </div>
+                    <figcaption>First 2 minutes: Carl Sagain explains how fragile this Earth/Solar System is.Source: Carl Sagan/Youtube</figcaption>
+                </figure>            
+                <p>Extinction of our species could come in a variety of different flavours, whether it is caused by global warming, nuclear war, pandemics, a cataclysmic event such as an asteroid hitting the Earth or if we make it 4-5 billion years, the Sun is going to explode and wipe us out anyway. If somehow all those weren’t a problem, the Earth can only provide so many resources for the population to survive off, so no matter what we are going to need to find a way to spread across our solar system </p>
+                <p>Why Mars though?</p>
+                <p>Mars is the most logical planet to colonise due to its relative similarity to Earth. The benefits of colonising Mars are:</p>
+                <ul>
+                    <li>It has a <a href="http://mars.nasa.gov/allaboutmars/facts/">similar length of day</a> at 24 hours 37 minutes</li>
+                    <li><a href="http://mars.nasa.gov/allaboutmars/facts/">its relative closeness</a> to Earth makes it easier to travel to</li>
+                    <li>it’s <a href="http://mars.nasa.gov/allaboutmars/facts/">tilt of axis is 25 degrees</a> compared to Earth’s 23.5 degrees which would give similar seasons.</li>
+                    <li>it exists within the estimates of the <a href="https://en.wikipedia.org/wiki/Circumstellar_habitable_zone">habitable zone of our solar system</a>(where liquid water can exist</li>
+                    <li>It has <a href="http://phys.org/news/2015-06-colonize-mars.html">terraforming potential</a>, meaning we might be able to change its atmosphere to a point where we might be able to live on it without needing spacesuits</li>
+                    <li>There is water on mars, just in the <a href="http://phys.org/news/2015-06-colonize-mars.html">form of ice</a>. Which could be harvested instead of having to bring it from Earth</li>
+                </ul>
+                <p>However, with anything there are some challenges(or drawbacks) that could make it difficult for humans to survive on Mars:</p>
+                <ul>
+                    <li>It's gravity is 37% that of Earth's, which cause <a href="http://www.nsbri.org/DISCOVERIES-FOR-SPACE-and-EARTH/The-Body-in-Space/">health problems</a></li>
+                    <li><a href="http://www.space.com/16907-what-is-the-temperature-of-mars.html">Lower temperature range.</a>Which is still relatively warm for space. </li>
+                    <li>No magnetic field giving <a href="http://blogs.discovermagazine.com/d-brief/2015/05/01/mars-astronauts-cosmic-rays/">no protection from radiation</a></li>
+                    <li><a href="http://www.space.com/16903-mars-atmosphere-climate-weather.html">Unbreathable atmosphere.</a></li>
+                </ul>
+                <p>While these challenges seem like a huge problem for actually going to Mars, if science and the human race can solve these we will be able to apply them on a grand scale in order to start properly exploring our solar system, and eventually our galaxy. </p>
+
+            </article>
+        </div>
+        
+        
+        <div class="page" id="transportation">
+            <article class="hiddenPage">
+
+                <button class="exitBTN">&times;</button>
+                <h2 class="cardSubheading">Transportation</h2>
+                <p>Getting to Mars is easy. It’s not easy when you need to transport humans instead of robots however. With humans on board, you need to account for things such as travel time, and resources that they will need along the way. </p>
+                
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/MpOJ6fQ0roI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                <figcaption>How long does it take to get to Mars? Source: Fraser Cain/Youtube.</figcaption>
+                
+                </figure>
+                
+                <p>With current technology, it takes about <a href="http://www.universetoday.com/14841/how-long-does-it-take-to-get-to-mars/">150-300 days to get there</a>, which depends on the speed of the craft and the alignment of Earth and Mars.</p>
+
+                <p>One problem is the current technology we use to get there. At the moment we use traditional rockets that burn chemicals in order to provide a thrust, and most of this fuel is used up in trying to escape the Earth’s gravitational pull and achieve escape velocity. Once they get to space, the spacecraft essentially glide their way to the planet.  </p>
+                <h2 class="pageSubHeadings">Faster Travel</h2>
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/3oiwb7-Bl40" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    
+                    <figcaption>Neil deGrasse Tyson Explains How Ion Drives Work. Source: StarTalk Raido/Youtube 
+                    </figcaption>
+                </figure>
+                
+                <p>However there have been advancements in trying to shorten the length of time it takes to get there with different propulsion technologies, such as a proposed <a href="https://www.newscientist.com/article/dn17476-ion-engine-could-one-day-power-39-day-trips-to-mars/?full=true">ion engine</a> which could take only 39 days. This ion engine, while can’t be used to take off, can be used to achieve continuous acceleration which will get them there faster than current technology. Though to travel to Mars in 39 days, the spacecraft would need an on-board nuclear reactor to provide enough energy. </p>
+
+                
+                <h2 class="pageSubHeadings">Travelling Through Radiation</h2>
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/ISutAGipMwI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+
+                    <figcaption>NASA | Space Radiation Shielding for Long Duration Human Space Missions
+                        Source: StarTalk Raido/Youtube 
+                    </figcaption>
+                </figure>
+                <p>One of the main problems with interplanetary travel is the radiation they will have to face in travelling there. Currently the favoured material to build spacecraft out of is aluminium, <a href="http://science.nasa.gov/science-news/science-at-nasa/2004/17feb_radiation/">which only absorbs about half of the radiation</a> that would hit the spacecraft. Space radiation is particularly dangerous as it is filled with gamma-rays, cosmic rays and high-energy protons, which come from our Sun, far away stars and supernovae. These types of radiation can tear apart DNA and damage cells.</p> 
+
+                <p>This hasn’t been much of a problem as of yet, due to the ISS being sheltered mostly by our <a href="http://science.nasa.gov/science-news/science-at-nasa/2004/17feb_radiation/">Earth’s magnetosphere</a>, and is sheltered by the planet some of the time. The Apollo astronauts absorbed higher levels of radiation, but since they’re trip was only a few days, so the doses were most likely small. This problem is largely different for those travelling to Mars, as they have to spend extended periods of time within the spaceship so there has to be adequate radiation shielding on the spaceship. </p>
+                
+                
+                <p>The most ideal situation for travelling through space would be to create a new material, or combination of materials, that can either shield much more efficiently or repel radiation entirely. There are theorised solutions that involve using either <a href="http://www.nasa.gov/vision/space/gettingtospace/16sep_rightstuff.html">hydrogen or helium to insulate the spaceship</a> due to them producing very little secondary radiation when radiation hits them. One solution is to insulate the entire spacecraft with a layer of liquid hydrogen 50-100cm thick, but the system to support it would prove too heavy and awkward. </p>
+                    <p>Another suggestion that was in the video above, would be to surround the spacecraft with its own magnetic field. The problems come with the materials they would have to use, and how they would actually store it on a spacecraft where space is very limited. </p>
+
+            </article>
+        </div>
+        
+        <div class="page" id="health">
+            <article class="hiddenPage">
+                <button class="exitBTN">&times;</button>
+                <h2 class="cardSubheading">Health Effects of Living On Mars and Low Gravity</h2>
+                
+                <p>Humans are evolutionarily built for Earth and its characteristics. Moving to another planet could lead to serious problems for our body. The problems that are mostly concerning are the changes in gravity and radiation levels we might face. </p>
+                <h2 class="pageSubHeadings">Effects of Low Gravity</h2>
+                <p>Past missions in space haven’t particularly been concerned with long term effects of zero gravity and how it changes the human body, as astronauts haven’t been exposed to zero gravity for long periods of time. Due to Mars being so far away,the time it takes to get there, and the lower gravity on Mars, the long term effects of zero gravity are kind of a problem for humans. </p>
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/QsZWVBmpj18" frameborder="0" allowfullscreen></iframe></div>
+                    <figcaption>What Space Does To The Human Body. Source: DNEWS/Youtube</figcaption>
+                </figure>
+                
+                <p>Effects of zero gravity that we know about mostly involve the heart, muscles and bone density. The heart, as you probably know, is constantly pumping blood around our body, as it does this it works against gravity. If gravity is reduced, the heart no longer has to work as hard and it will become weaker, along with other muscles around your body.  A similar effect happens with bones, they lose density, and release <a href="http://www.wired.com/2014/02/happens-body-mars/">calcium into our systems</a>, which causes problems such as constipation or psychotic depression.</p> 
+
+                <p>This is fine if you want to stay in that environment forever, but landing on Mars or if you want to come back to Earth, there will need to be a large amount of recovery time to <a href="http://science.nasa.gov/science-news/science-at-nasa/2001/ast02aug_1/">readjust your body to normal</a>. These health effects can be somewhat counteracted with exercise, but it’s estimated that bone density would take <a href="http://science.nasa.gov/science-news/science-at-nasa/2001/ast02aug_1/">2-3 years to come back to normal</a>.</p>
+                <h2 class="pageSubHeadings">Reproducing In Space</h2>
+                <figure>
+                    <div class="Youtubevideo">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/OhcPKmvWTqE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <figcaption>Sex In Space: How It's Done. Source: DNEWS/Youtube.</figcaption>
+                </figure>
+                <p>Ignoring all that, a pivotal problem for a long lasting colony on Mars is that it’s still unknown whether or not it’s <a href="http://www.space.com/20771-mars-one-colony-pregnancy.html">possible to become pregnant</a> and give birth in low/zero gravity. Even if it were possible, then there’s also the unknown of what effects growing up in a <a href="http://www.space.com/10822-sex-mars-pregnancy-space-risks.html">low gravity environment</a>, or high radiation environment, would do to a human. </p>
+
+                <p>If we solved this problem, then we would still have to solve the problem of radiation on the trip there and during the stay on Mars.</p>
+
+            </article>
+        </div>
+        
+        <div class="page" id="livingThere">
+            <article class="hiddenPage">
+
+                <button class="exitBTN">&times;</button>
+                <h2 class="cardSubheading">Living On Mars</h2>
+                <p>As you might have guessed it, living on Mars is going to be a little different than the live we live on Earth. If we can terraform before we go, it shouldn’t too hard, but most likely we won’t be able to. That means living in close quarters, and probably in the ship that got you there in the first place.</p>
+
+                <p>After achieving all the scientific hurdles of getting to Mars, and landing on it safely, the next problem arises of how to actually live there. In order to live on the planet the people going there are going to need to be able to take along everything they will need for a year. This means food, water, habitats, enough breathable air for the trip and the time it takes to set up the plants needed to provide oxygen, all the equipment needed for fixing the aircraft/habitats , and <a href="https://en.wikipedia.org/wiki/Colonization_of_Mars#Equipment_needed_for_colonization">many more things</a>. </p>
+
+                <p>From the transportation of these things alone, the cost is going to be huge.</p> 
+
+                <h2 class="pageSubHeadings">Cost of Going to Mars</h2>
+                
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/3YDnGHaXdxw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <figcaption>The Cost of Living on Mars?  Source: DNEWS/Youtube    </figcaption>
+                </figure> 
+                
+                <h2 class="pageSubHeadings">Habitats</h2>
+                
+                <p>The most important part of living on mars is going to be the type of habitats that people are going to live on once they get there. There are a few certain requirements that they need to have in order for people to survive in them:</p>
+                    <ul>
+                        <li>Sustainable - recycling important materials such as wastewater into drinking water, meaning you’ll be drinking <a href="http://www.digitaltrends.com/home/what-will-martian-habitats-be-like/">recycled pee, perspiration, condensation.</a> </li>
+                        <li>Areas to house plants that will take the CO2 from the habitat’s air and turn it back into oxygen. </li>
+                        <li>Resource extraction equipment for water, oxygen, minerals etc. </li>
+                        <li>Communications technology</li>
+                        <li>Storage for food and water</li>
+                        <li>Shielding from radiation</li>
+                </ul>
+                <p>A proposed solution for living on Mars is building underground habitats that are <a href="http://phys.org/news/2015-06-colonize-mars.html">connected via tunnels</a>. This would shield them from the radiation that is present on the surface.</p>  
+
+                <h2 class="pageSubHeadings">Food They Will Eat</h2>
+                <p>Eventually the people living on Mars are going to need to be self-sustaining. The most important part of this problem is the food, unless they are getting resupplied from Earth regularly. Reconstituted foods are only going to last so long, so figuring out what plants they will need to take is going to be essential as they will need to be able to sustain humans with enough nutrients so they don’t become malnourished. </p>
+                
+                
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/7HVl2aNyIus" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <figcaption>What Food Will We Eat On Mars?  Source: DNEWS/Youtube    </figcaption>
+                </figure>
+                
+                <p>NASA is currently working on a solution to solve <a href="http://www.theatlantic.com/technology/archive/2015/08/mars-food-colony/402053/">growing vegetables for both inflight and for on MARS</a>. This device works soil free, is lit by LEDs to provide a pseudo-sunlight and it will get its carbon dioxide from people living in the habitat or space-craft. This could be pivotal in solving the problem of what food the astronauts would eat while on Mars, if it can provide a diverse range of plants that can sustain humans indefinitely.</p> 
+
+                
+                <h2 class="pageSubHeadings">Communications</h2>
+                <p>Finally, communication is going to be a large problem for the astronauts that go to Mars. Signals going from Earth to Mars can take anywhere from <a href="http://io9.com/how-will-space-colonists-access-the-internet-on-mars-511693210">4 to 20 minutes</a>, which is going to make all forms of communication essentially one-directional. Kinda like leaving a message on a message bank for someone and only communicating via that. Due to this large distance and the time it takes for the signal to travel, this also means that internet isn’t going to work in the fast manner we are used to. On top of all this, communication between Mars blacks out for <a href="http://mars.nasa.gov/mer/spotlight/20061020.html">2 weeks of every year</a>. it is theorised that a placement of satellites at specific points in the solar system could relay the information back to Earth during these blackouts.</p>
+
+            </article>
+        </div>
+        
+        <div class="page" id="terraforming">
+            <article class="hiddenPage">
+
+                <button class="exitBTN">&times;</button>
+                <h2 class="cardSubheading">Terraforming</h2>
+                <p>If we seriously want to be able to live on other planets in a similar vein to that of our current planet, without needing spacesuits to breath, then we need to be able to perform the process of terraforming to convert another planet's climate into something more Earth-like.After we did that we could introduce animal species and live there like we do on Earth.  </p>
+                <div class="embedImg">
+                    <a title="By Daein Ballard [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMarsTransitionV.jpg">
+                        <img width="500" alt="Mars Terraform transition by Daein Ballard" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/MarsTransitionV.jpg/500px-MarsTransitionV.jpg"/></a>
+                    <p class="youtubeCaption">
+                        <em>By Daein Ballard [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons</em>
+                    </p>
+                </div>
+                
+                <p>While we don’t have the economic/natural resources for terraforming at the moment, the main idea behind the process is warming the planet up so we can “unlock” the frozen water that might be in the polar caps turning them into seas, heightening the surface pressure(so it can retain the atmosphere we create) and change the composition of the atmosphere from being a high mixture of C02 into the familiar Earth composition of oxygen and nitrogen.</p>
+                <p>There are a few theorised ways to achieve terraforming. Most of these techniques are similar to creating a runaway greenhouse effect, like we have done on Earth already in regard to global warming.  The surface temperature on Mars ranges from  20°C at noon to lows of -153°C at the ice caps, so heating up the planet might sound like a hard task, but to achieve a runaway greenhouse effect we might only need to raise the average surface temperature of <a href="http://quest.nasa.gov/mars/background/terra2.html">4°C in order to vaporise the carbon dioxide</a> solar ice cap, which would in turn raise the temperature by an average of 70°C.  After achieving this, we still might not be able to breath the air, but if we <a href="http://www.users.globalnet.co.uk/~mfogg/zubrin.htm">planted trees that could convert the CO2</a> into oxygen… which possibly would take centuries.</p>
+                
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe name="How We Can Live On Mars Without A Spacesuit" width="640" height="360" src="https://www.youtube.com/embed/OJRcBeVQOhw" frameborder="0" allowfullscreen></iframe>
+
+                    </div>
+                    <figcaption>Explanation of the process of terraforming and the different techniques to do it.Source: DNews/Youtube.</figcaption>
+                    
+                </figure>
+                <p> The main theories proposed in this video and other sources online are:</p>
+                <h2 class="pageSubHeadings">Orbital mirrors</h2>
+                <p>If we constructed orbital mirrors that directed heat from the Sun onto the planet directed at certain areas, like where a colony could possibly be located, or at the polar caps to <a href="http://www.users.globalnet.co.uk/~mfogg/zubrin.htm">melt the ice and release CO2</a> which would in theory thicken the atmosphere and heat it up at the same time. 
+                    However, constructing these mirrors to get the proposed heat output requires a supermassive space mirror that would weigh almost <a href="http://www.users.globalnet.co.uk/~mfogg/zubrin.htm">200,000 tons</a>. We can’t build this on Earth, so we would need to be able to manufacture materials in space in order to achieve this. </p>
+
+                <h2 class="pageSubHeadings">Global Warming like we did on Earth.</h2>
+                <p> By producing large amounts of CFC’s(chlorofluorocarbon) like we have on Earth by using fossil fuels, we could raise the average temperature by the 4 degrees necessary in order to start the <a href="http://www.users.globalnet.co.uk/~mfogg/zubrin.htm">runaway greenhouse effect</a>.  We could do this by using factories on Mars that produce CFCs, however the drawback of this is we’d need a lot of factories which would most likely cost billions of dollars, for either taking them to Mars or constructing them on the planet. </p>
+                
+
+                <h2 class="pageSubHeadings">Colliding Mars with Ammonia asteroids</h2>
+                <p>Taking an asteroid with Ammonia of course and into a collision path with Mars sounds more like an evil plan to destroy a planet rather than turn it into something we could use. This would require finding an <a href="http://www.users.globalnet.co.uk/~mfogg/zubrin.htm">ammonia-heavy asteroid</a> in the main asteroid belt, or outer solar system, and then giving it enough propulsion and the right direction to hit Mars. However there are some merits to this plan, the heat output of such an asteroid would heat up the planet enough for the ice to melt, the ammonia being a powerful greenhouse would also help thicken the atmosphere. </p>
+                
+                <p>All these proposed theories take a lot of time, between building and transportation. There is one fast solution though as Elon Musk provides in an interview with Stephen Colbert below, that involves firing thermonuclear bombs above the poles to melt them. You can watch below.</p>
+                <figure>
+                    <div class="Youtubevideo">
+                        <iframe name="Elon Musk Might Be A Super Villain" width="640" height="360" src="https://www.youtube.com/embed/gV6hP9wpMW8?t=96s" frameborder="0" allowfullscreen></iframe>
+                    
+                    </div>
+                    <figcaption>Skip to 1:35 to hear Elon Musk talk about going to Mars, and possible terraforming with thermonuclear warheads.</figcaption>
+                    <figcaption>Source: The Late Show With Stephen Colbert/Youtube</figcaption>
+                </figure>
+                
+                
+                <h2 class="pageSubHeadings">Ethical Issues With Terraforming.</h2>
+                
+                <p>While terraforming sounds like a great idea for us humans, there are some ethical with changing a whole planet’s biosphere. </p>
+                <ul>
+                    <li>Do we have the right to change a planet’s climate, play god and move in?</li>
+                    <li>If there is any potential formation on life on Mars by itself, terraforming Mars would kill any budding indigenous bacteria that might exist there.</li>
+                    <li>If bacteria that might already be there survive a terraforming process, we might bring viruses with us that could eradicate them.</li>                
+                </ul>
+                <p>These are questions we must think about before causing any irreparable harm to a planet we really don’t know much about. Just because we have the capability to do something it doesn’t mean we should interfere with another planet.</p>
+                
+                <p>While we definitely don’t have the means or capability to actually try and terraform at the moment, there are a number of proposed theories as to how it might be achieved.</p>
+                
+                
+            </article>
+    </div>
+    
+    
+<!--        HIDDEN PAGE CONTENT ENDS HERE-->
+</body>
+
+</html>
